@@ -16,21 +16,23 @@
     
     <link rel="stylesheet" href="/css/main.css">
     <style>
-        html, body {
+        /* html, body {
             padding: 0;
             margin: 0;
-        }
+        } */
     </style>
 
     @yield('css')
 </head>
 <body>
+    
    <div class="background">
+    
         <div class="header">
-            
+            @include('home.nav')
         </div>
 
-        <div class="container" >
+        <div class="container-fluid" >
             @yield('content')
         </div>
 
