@@ -63,14 +63,10 @@
   padding: 10px 20px;
   font-size: 16px;
   opacity: 0;
-
-  
 }
 .dropdown_menu li:hover {
+  /* animation: slideLeft 300ms 120ms ease-in-out forwards; */
   color:#aa8453;
-  background-color: #212529;
-  
-  
 }
 .dropdown_menu-1 .dropdown_item-1 {
   transform-origin: top center;
@@ -80,19 +76,19 @@
 }
 .dropdown_menu-1 .dropdown_item-2 {
   transform-origin: top center;
-  animation: slideDown 300ms 120ms ease-in-out forwards;
+  animation: slideDown 300ms 60ms ease-in-out forwards;
 }
 .dropdown_menu-1 .dropdown_item-3 {
   transform-origin: top center;
-  animation: slideDown 300ms 180ms ease-in-out forwards;
+  animation: slideDown 300ms 60ms ease-in-out forwards;
 }
 .dropdown_menu-1 .dropdown_item-4 {
   transform-origin: top center;
-  animation: slideDown 300ms 240ms ease-in-out forwards;
+  animation: slideDown 300ms 60ms ease-in-out forwards;
 }
 .dropdown_menu-1 .dropdown_item-5 {
   transform-origin: top center;
-  animation: slideDown 300ms 300ms ease-in-out forwards;
+  animation: slideDown 300ms 60ms ease-in-out forwards;
 }
 
 /* FrireFox */
@@ -154,10 +150,13 @@
 }
 @keyframes slideLeft {
   0% {
+   
     opacity: 0;
     transform: translateX(0);
   }
   100% {
+
+   
     opacity: 1;
     transform: translateX(60px);
   }
@@ -169,11 +168,133 @@
 
 
 
+/* ฺBODY  */
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
 
- 
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+ .TextFadeInUP h1 {
+    position: relative;
+    right:50% ;
+    top: 50%;
+   
+    font-family: 'Gilda Display', serif;
+    font-size: 55px;
+    text-transform: uppercase;
+    line-height: 1.35em;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 15px; /*ระยะห่างช่องไฟ*/
+    display: flex;
+  justify-content: center; /* จัดให้ตัวอักษรอยู่ตรงกลางแนวนอน */
+  align-items: center; /* จัดให้ตัวอักษรอยู่ตรงกลางแนวตั้ง */
+}
+.animated.fadeInUp h1{
+  -webkit-animation-delay: .60s; /* หน่วงเวลาเป็น 1 วินาที */
+  animation-delay: .60s;
+}
+.TextFadeInUP h4 {
+  position: relative;
+    right:50% ;
+    top: 50%;
+
+  padding: 5%;
+
+  font-family: 'Barlow Condensed', serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    -webkit-animation-delay: .40s;
+    animation-delay: .40s;
+    display: flex;
+  justify-content: center; /* จัดให้ตัวอักษรอยู่ตรงกลางแนวนอน */
+  align-items: center; /* จัดให้ตัวอักษรอยู่ตรงกลางแนวตั้ง */
+}
+
+
 </style>
 
 @endsection
 @section('content')
-@include('home._body')
+<div class="" id="App-Home">
+  @include('home._body')
+</div>
+
+@endsection
+@section('js')
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('.carousel-control-next').click(function() {
+    $('h1').removeClass('animated fadeInUp').addClass('animated fadeInUp').one('animationend', function() {
+      $(this).removeClass('animated fadeInUp');
+    });
+    $('h4').removeClass('animated fadeInUp').addClass('animated fadeInUp').one('animationend', function() {
+      $(this).removeClass('animated fadeInUp');
+    });
+  });
+
+  $('#carouselExampleInterval').on('slid.bs.carousel', function () {
+    $('h1').removeClass('animated fadeInUp').addClass('animated fadeInUp').one('animationend', function() {
+      $(this).removeClass('animated fadeInUp');
+    });
+    $('h4').removeClass('animated fadeInUp').addClass('animated fadeInUp').one('animationend', function() {
+      $(this).removeClass('animated fadeInUp');
+    });
+  });
+});
+
+const HOME ={
+        data(){
+            return{
+              haed: 'sfdsf',
+            }
+        },
+      methods:{},
+      mounted(){
+
+      }
+    };
+    Vue.createApp(HOME).mount('#App-Home');
+
+</script>
 @endsection

@@ -7,14 +7,13 @@
     <title>@yield('title')</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css" integrity="sha512-MQXduO8IQnJVq1qmySpN87QQkiR1bZHtorbJBD0tzy7/0U9+YIC93QWHeGTEoojMVHWWNkoCp8V6OzVSYrX0oQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.3/swiper-bundle.min.css" integrity="sha512-uuenj2ro+QKfF5Ig2BYOy3s3BhYPODotv/9V8Ue1MHrrwsiYKY01WzNMNk45i0jRUMXZxEuGpUzyPahsKOMKTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link rel="stylesheet" href="/css/main.css">
+
+
     <style>
         /* html, body {
             padding: 0;
@@ -26,7 +25,7 @@
 </head>
 <body>
     
-   <div class="background">
+   <div class="background" id="App-Home1">
     
         <div class="header">
             @include('home.nav')
@@ -34,6 +33,7 @@
 
         <div class="container-fluid" >
             @yield('content')
+           
         </div>
 
         <div class="footer">
@@ -53,7 +53,11 @@
 
     <script>
 
-    </script>
+
+
+</script>
+
+   
 
 </body>
 </html>
