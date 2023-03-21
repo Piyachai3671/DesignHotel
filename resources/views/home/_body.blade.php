@@ -12,14 +12,17 @@
     </div>
     <span class="animated animatedFadeInUp fadeInUp" style="position: absolute; top:35%; left: 50%; z-index: 1; text-align: :center; justify-content: center; color:#fff;">
       <div class="TextFadeInUP animated fadeInUp">
-       <h4><i class="fa fa-star checked" style="color: orange;"></i>
-        <i class="fa fa-star checked" style="color: orange;"></i>
-        <i class="fa fa-star checked" style="color: orange;"></i>
-        <i class="fa fa-star checked" style="color: orange;"></i>
-        <i class="fa fa-star checked" style="color: orange;"></i></h4> 
+       <span style=" position: relative; right: 10%;">
+        <i class="star-rating" style="color: orange;"></i>
+        <i class="star-rating" style="color: orange;"></i>
+        <i class="star-rating" style="color: orange;"></i>
+        <i class="star-rating" style="color: orange;"></i>
+        <i class="star-rating" style="color: orange;"></i>
+      </span> 
         <h4>LUXURY HOTEL & BEST RESORT</h4>
         <h1>Enjoy A LUXURY</h1>
-        <h1>EXPERIENCE</h1>
+        <h1>EXPERIENCE</h1>   
+        <button class="btn btnfade" style="">ROOMS & SUITES</button>
       </div>
     </span>
     

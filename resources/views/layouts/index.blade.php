@@ -25,7 +25,7 @@
 </head>
 <body>
     
-   <div class="background" id="App-Home1">
+   <div class="container-fluid background" id="App-Home1">
     
         <div class="header">
             @include('home.nav')

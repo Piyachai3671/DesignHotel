@@ -28,6 +28,72 @@
 
 .dropdown:hover .dropdown-content {display: block;} */
 
+
+/* star - white  */
+.star {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.9em;
+  margin-right: 0.9em;
+  margin-bottom: 1.2em;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0.7em solid #fff;
+  border-left: 0.3em solid transparent;
+  /* Controlls the size of the stars. */
+  font-size: 8px;
+}
+.star:before, .star:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0.6em;
+  left: -1em;
+  border-right: 1em solid transparent;
+  border-bottom: 0.7em solid #fff;
+  border-left: 1em solid transparent;
+  transform: rotate(-35deg);
+}
+.star:after {
+  transform: rotate(35deg);
+}
+
+/* Star rating  */
+.star-rating {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.9em;
+  margin-right: 0.9em;
+  margin-bottom: 2em;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0.7em solid #e4a853;
+  border-left: 0.3em solid transparent;
+  /* Controlls the size of the stars. */
+  font-size: 8px;
+}
+.star-rating:before, .star-rating:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0.6em;
+  left: -1em;
+  border-right: 1em solid transparent;
+  border-bottom: 0.7em solid #e4a853;
+  border-left: 1em solid transparent;
+  transform: rotate(-35deg);
+}
+.star-rating:after {
+  transform: rotate(35deg);
+}
+
+
 .dropdown {
   padding: 20px 40px;
   display: flex;
@@ -249,14 +315,70 @@
   justify-content: center; /* จัดให้ตัวอักษรอยู่ตรงกลางแนวนอน */
   align-items: center; /* จัดให้ตัวอักษรอยู่ตรงกลางแนวตั้ง */
 }
+/*Hoverปุ่มBody*/
+.btnfade{
+  font-weight: 400;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    margin: 30px;
+    position: relative;
+    right: 22%;
+    font-size: 15px;
+    letter-spacing: 3px;
+    border: 1px solid rgba(255,255,255,0.5);
 
+  background-color: transparent;
+  color: white;
+  background-image: linear-gradient(to left, rgb(255, 255, 255) 50%, rgba(232, 64, 64, 0) 50%);
+  background-size: 200% 100%;
+  transition: background-position 0.5s ease;
+}
+.btnfade:hover{
+  border: 1px solid rgba(255,255,255,0.5);
+  background-position: -100% 0;
+  color: #aa8453;
+}
+/*Hoverปุ่มBody*/
+
+
+/*Body1*/
+.section-subtitle {
+    font-size: 15px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    color: #aa8453;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 6px;
+    margin-bottom: 5px;
+}
+.section-title {
+    font-size: 46px;
+    font-family: 'Gilda Display', serif;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    margin-bottom: 20px;
+    line-height: 1.25em;
+}
+p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 20px;
+}
+/*Body1*/
 
 </style>
 
 @endsection
 @section('content')
-<div class="" id="App-Home">
+<div class="" style="background-color: #212529;" id="App-Home">
   @include('home._body')
+  @include('home._body1')
 </div>
 
 @endsection
