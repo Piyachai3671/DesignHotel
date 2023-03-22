@@ -1,4 +1,4 @@
-<ul class="nav justify-content-center navbar " style="">
+<ul class="nav justify-content-center navbar " style="z-index:999;">
   <img src="img/logo.png" alt="">
     <li class="nav-item">
       

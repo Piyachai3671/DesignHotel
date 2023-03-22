@@ -280,7 +280,7 @@
     top: 50%;
    
     font-family: 'Gilda Display', serif;
-    font-size: 55px;
+    font-size: 40px;
     text-transform: uppercase;
     line-height: 1.35em;
     color: #fff;
@@ -372,6 +372,105 @@ p {
 }
 /*Body1*/
 
+/*Rooms*/
+ .item {
+    position: relative;
+    overflow: hidden;
+    padding: 1%;
+    margin-bottom: 30px;
+}
+.position-re {
+    position: relative;
+}
+.o-hidden {
+    overflow: hidden;
+}
+
+.item img {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+.item .category {
+  
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+    writing-mode: vertical-rl;
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    text-orientation: mixed;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.5);
+    font-family: 'Barlow Condensed', sans-serif;
+    padding: 10px 3px;
+    line-height: 1.5em;
+}
+.item .category a {
+  text-decoration: none;
+    color: #fff;
+}
+ .item .con {
+    padding: 20px;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    text-align: left;
+    z-index: 20;
+    height: auto;
+    box-sizing: border-box;
+    background: -moz-linear-gradient(top, transparent 0, rgba(0, 0, 0, .1) 2%, rgba(0, 0, 0, .75) 90%);
+    background: -webkit-linear-gradient(top, transparent 0, rgba(0, 0, 0, .01) 2%, rgba(0, 0, 0, .75) 90%);
+    background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .01) 2%, rgba(0, 0, 0, .75) 90%);
+}
+
+ .facilities ul li i {
+    margin-right: 10px;
+}
+ .facilities ul li {
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.2em;
+    padding-bottom: 20px;
+    float: left;
+}
+ .facilities ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ .item .con .permalink {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    height: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    display: inline;
+}
+/*Rooms*/
 </style>
 
 @endsection
@@ -379,6 +478,7 @@ p {
 <div class="" style="background-color: #212529;" id="App-Home">
   @include('home._body')
   @include('home._body1')
+  @include('home._Rooms')
 </div>
 
 @endsection

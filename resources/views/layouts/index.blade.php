@@ -25,18 +25,18 @@
 </head>
 <body>
     
-   <div class="container-fluid background" id="App-Home1">
+   <div class=" background" id="App-Home1">
     
-        <div class="header">
+        <div class="">
             @include('home.nav')
         </div>
 
-        <div class="container-fluid" >
+        <div class="" >
             @yield('content')
            
         </div>
 
-        <div class="footer">
+        <div class="">
     
         </div>
    </div>
