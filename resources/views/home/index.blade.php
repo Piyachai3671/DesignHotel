@@ -111,6 +111,7 @@
 }
 .dropdown:hover .dropdown_menu li {
   display: block;
+  
 }
 
 .dropdown_menu {
@@ -138,8 +139,8 @@
   transform-origin: top center;
   animation: slideDown 300ms 60ms ease-in-out forwards;
   /* animation:  slideDownOut 300ms 60ms ease-in-out forwards; */
- 
 }
+
 .dropdown_menu-1 .dropdown_item-2 {
   transform-origin: top center;
   animation: slideDown 300ms 60ms ease-in-out forwards;
@@ -210,7 +211,7 @@
   }
   100% {
     opacity: 0;
-    transform: translateY(60px);
+    transform: translateY(-60px);
   }
   
 }
@@ -231,8 +232,6 @@
   transform-origin: top center;
   animation: slideLeft 300ms 60ms ease-in-out forwards;
 } */
-
-
 
 /* ฺBODY  */
 @keyframes fadeInUp {
@@ -340,7 +339,7 @@
   color: #aa8453;
 }
 /*Hoverปุ่มBody*/
-
+/*Body*/
 
 /*Body1*/
 .section-subtitle {
@@ -370,6 +369,7 @@ p {
     color: rgba(255,255,255,0.5);
     margin-bottom: 20px;
 }
+
 /*Body1*/
 
 /*Rooms*/
@@ -378,6 +378,8 @@ p {
     overflow: hidden;
     padding: 1%;
     margin-bottom: 30px;
+    animation: fadeInUp 300ms 60ms ease-in-out forwards;
+   
 }
 .position-re {
     position: relative;
@@ -419,15 +421,17 @@ p {
     color: #fff;
 }
  .item .con {
+  animation: slide-down 1s ease-out forwards  ;
     padding: 20px;
     position: absolute;
     bottom: -60px;
     left: 0;
     width: 100%;
+   
     -webkit-transition: all .3s;
     transition: all .3s;
     text-align: left;
-    z-index: 20;
+    z-index: 1;
     height: auto;
     box-sizing: border-box;
     background: -moz-linear-gradient(top, transparent 0, rgba(0, 0, 0, .1) 2%, rgba(0, 0, 0, .75) 90%);
@@ -435,6 +439,50 @@ p {
     background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .01) 2%, rgba(0, 0, 0, .75) 90%);
 }
 
+.item .con h6 a {
+    position: relative;
+    color: #fff;
+    font-size: 9px;
+    font-family: 'Barlow Condensed', sans-serif;
+    display: inline;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.item .con h5 a {
+  font-family: 'Barlow Condensed', sans-serif;
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+.con:hover  {
+  animation: slide-up 1s ease-out forwards  ;
+  
+}
+/* .con:: {
+  animation: slide-down 1s ease-out forwards  ;
+  
+} */
+.item .line {
+    text-align: center;
+    height: 1px;
+    width: 60px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    margin: auto 0 30px;
+}
+.item:hover .line {
+    width: 100%;
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+}
  .facilities ul li i {
     margin-right: 10px;
 }
@@ -452,9 +500,9 @@ p {
     padding: 0;
     list-style: none;
 }
- .item .con .permalink {
+ .item .con .permalink a {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 15px;
+    font-size: 9px;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #fff;
@@ -469,6 +517,55 @@ p {
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
     display: inline;
+   text-decoration: none;
+}
+
+/* [1] The container */
+.img-hover-zoom {
+  
+   /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  width: 100%; height: auto;
+  transition: transform 1.0s ease, opacity 1.0s ease;
+
+ 
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  /* transition: opacity 1.0s ease; */
+  transform: scale(1.1);
+  opacity: 0.5;
+ 
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    /* ระยะเริ่มจากบนลงล่าง */
+    transform: translateY(0); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-50px);
+  }
+  
+}
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    /* ระยะเริ่มจากบนลงล่าง */
+    transform: translateY(-50px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
 }
 /*Rooms*/
 </style>
@@ -505,6 +602,10 @@ $(document).ready(function() {
   });
 });
 
+
+
+// สร้างฟังก์ชันที่จะเรียกเมื่อมีการเลื่อนหน้าจอและเพิ่มอีเวนต์ 'scroll'
+window.addEventListener('scroll', fadeInUp);
 const HOME ={
         data(){
             return{
