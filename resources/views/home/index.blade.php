@@ -568,6 +568,65 @@ p {
   
 }
 /*Rooms*/
+
+/*extraServices*/
+.detail{
+/* color: #fff;
+position: relative; 
+bottom: 150px;
+overflow: hidden; */
+
+color: #fff;
+animation: slide-down 1s ease-out forwards  ;
+    padding: 20px;
+    position: absolute;
+    bottom: -60px;
+    /* left: 0; */
+    width: 100%;
+    /* height: 100%; */
+   
+    /* -webkit-transition: all .3s; */
+    /* transition: all .3s; */
+    /* text-align: left; */
+    z-index: 1;
+    height: auto;
+    /* box-sizing: border-box; */
+    background: -moz-linear-gradient(top, transparent 0, rgba(0, 0, 0, .1) 2%, rgba(0, 0, 0, .75) 90%);
+    background: -webkit-linear-gradient(top, transparent 0, rgba(0, 0, 0, .01) 2%, rgba(0, 0, 0, .75) 90%);
+    background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .01) 2%, rgba(0, 0, 0, .75) 90%);
+}
+.detail:hover  {
+  animation: slide-up 1s ease-out forwards  ;
+  
+}
+ .name {
+    line-height: 1;
+    margin: 0;
+    font-family: 'Gilda Display', serif;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.amount {
+    margin: 0;
+    line-height: 1;
+    font-family: 'Gilda Display', serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #aa8453;
+} 
+.list {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    color: rgba(255,255,255,0.5);
+}
+/*extraServices*/
 </style>
 
 @endsection
@@ -576,6 +635,8 @@ p {
   @include('home._body')
   @include('home._body1')
   @include('home._Rooms')
+  @include('home._extraServices')
+  
 </div>
 
 @endsection
@@ -602,8 +663,7 @@ $(document).ready(function() {
   });
 });
 
-
-
+$('.carousel').carousel()
 // สร้างฟังก์ชันที่จะเรียกเมื่อมีการเลื่อนหน้าจอและเพิ่มอีเวนต์ 'scroll'
 window.addEventListener('scroll', fadeInUp);
 const HOME ={

@@ -55,7 +55,7 @@
             </div>
             <div class="col-md-4">
                 <div class="item">
-                    <div class="position-re o-hidden">
+                    <div class="position-re o-hidden img-hover-zoom">
                         <img style="width: 100%; height: auto;" src="img/room2.jpg">
 
                         <span class="category">
@@ -99,7 +99,7 @@
             </div>
             <div class="col-md-4">
                 <div class="item">
-                    <div class="position-re o-hidden">
+                    <div class="position-re o-hidden img-hover-zoom">
                         <img style="width: 100%; height: auto;" src="img/room3.jpg">
 
                         <span class="category">
@@ -147,7 +147,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="item">
-                    <div class="position-re o-hidden">
+                    <div class="position-re o-hidden img-hover-zoom">
                         <img style="width: 100%; height: auto;" src="img/room4.jpg">
 
                         <span class="category">
@@ -191,7 +191,7 @@
             </div>
             <div class="col-md-6">
                 <div class="item">
-                    <div class="position-re o-hidden">
+                    <div class="position-re o-hidden img-hover-zoom">
                         <img style="width: 100%; height: auto;" src="img/room5.jpg">
 
                         <span class="category">
