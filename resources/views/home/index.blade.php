@@ -627,6 +627,77 @@ animation: slide-down 1s ease-out forwards  ;
     color: rgba(255,255,255,0.5);
 }
 /*extraServices*/
+/*promotion*/
+.desc-center h1 ,h6,span {
+  display: flex;
+  justify-content: center; /* จัดให้ตัวอักษรอยู่ตรงกลางแนวนอน */
+  align-items: center; /* จัดให้ตัวอักษรอยู่ตรงกลางแนวตั้ง */
+  
+}
+.desc-center span{
+  padding: 15px;
+}
+
+/* .vid {
+    position: relative;
+    z-index: 8;
+} */
+ .vid .vid-butn .icon {
+    color: #aa8453;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 100px;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+/* .vid .vid-butn .icon:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+    background: transparent;
+    border-radius: 50%;
+    z-index: -1;
+    -webkit-transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+    -o-transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+} */
+/* [class^="ti-"], [class*=" ti-"] {
+    font-family: 'themify';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
+/* *, ::after, ::before {
+    box-sizing: border-box;
+} */
+/* .ti-control-play:before {
+    content: "\e6ad";
+} */
+ .vid .vid-butn .icon:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    z-index: -1;
+}
+/*promotion*/
 </style>
 
 @endsection
@@ -636,6 +707,7 @@ animation: slide-down 1s ease-out forwards  ;
   @include('home._body1')
   @include('home._Rooms')
   @include('home._extraServices')
+  @include('home._promotional')
   
 </div>
 
