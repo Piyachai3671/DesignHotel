@@ -628,7 +628,7 @@ animation: slide-down 1s ease-out forwards  ;
 }
 /*extraServices*/
 /*promotion*/
-.desc-center h1 ,h6,span {
+.desc-center  {
   display: flex;
   justify-content: center; /* จัดให้ตัวอักษรอยู่ตรงกลางแนวนอน */
   align-items: center; /* จัดให้ตัวอักษรอยู่ตรงกลางแนวตั้ง */
@@ -643,6 +643,7 @@ animation: slide-down 1s ease-out forwards  ;
     z-index: 8;
 } */
  .vid .vid-butn .icon {
+  cursor: pointer;
     color: #aa8453;
     width: 100px;
     height: 100px;
@@ -689,13 +690,32 @@ animation: slide-down 1s ease-out forwards  ;
  .vid .vid-butn .icon:after {
     content: '';
     position: absolute;
-    top: 5px;
-    bottom: 5px;
-    right: 5px;
-    left: 5px;
+    top: 1px;
+    bottom: 1px;
+    right: 1px;
+    left: 1px;
     border: 1px solid #eee;
     border-radius: 50%;
     z-index: -1;
+}
+.btn-close{
+  position: relative; right: -430px; top : 10px;
+  border-radius: 50%; color: #fff; font-size: 18px; cursor: pointer; opacity: 1;
+
+}
+.btn-close:hover{
+  color: #bebdbd;
+}
+.modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+video {
+  max-width: 100%;
+  max-height: 100%;
 }
 /*promotion*/
 </style>
@@ -708,45 +728,64 @@ animation: slide-down 1s ease-out forwards  ;
   @include('home._Rooms')
   @include('home._extraServices')
   @include('home._promotional')
-  
+  <div class="modal fade" id="exampleModalPromotion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content " style="background-color: transparent;  display: flex;align-items: center;justify-content: center;">
+        <div class="">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+          <i  class="fa-solid fa-x btn-close" style="" data-bs-dismiss="modal" aria-label="Close"></i>
+        </div>
+        <div class="modal-body" style="">
+          <video style=""  controls>
+            <source src="img/video.mp4" type="video/mp4">
+            
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        {{-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> --}}
+      </div>
+    </div>
+  </div>
+
+  {{-- <button @click="OnshowVideo">Click Me</button> --}}
+  {{-- @if(isset($hhh) && $hhh == true)
+    <h1 style="color:red;">1111111111</h1>
+    <button>1111</button>
+  @endif --}}
 </div>
 
 @endsection
 @section('js')
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
-$(document).ready(function() {
-  $('.carousel-control-next').click(function() {
-    $('h1').removeClass('animated fadeInUp').addClass('animated fadeInUp').one('animationend', function() {
-      $(this).removeClass('animated fadeInUp');
-    });
-    $('h4').removeClass('animated fadeInUp').addClass('animated fadeInUp').one('animationend', function() {
-      $(this).removeClass('animated fadeInUp');
-    });
-  });
 
-  $('#carouselExampleInterval').on('slid.bs.carousel', function () {
-    $('h1').removeClass('animated fadeInUp').addClass('animated fadeInUp').one('animationend', function() {
-      $(this).removeClass('animated fadeInUp');
-    });
-    $('h4').removeClass('animated fadeInUp').addClass('animated fadeInUp').one('animationend', function() {
-      $(this).removeClass('animated fadeInUp');
-    });
-  });
-});
-
-$('.carousel').carousel()
-// สร้างฟังก์ชันที่จะเรียกเมื่อมีการเลื่อนหน้าจอและเพิ่มอีเวนต์ 'scroll'
-window.addEventListener('scroll', fadeInUp);
 const HOME ={
         data(){
             return{
               haed: 'sfdsf',
+              
+             
             }
         },
-      methods:{},
+      methods:{
+    //     OnshowVideo(){
+          
+    // this.hhh = true; // เปลี่ยนค่า hhh เป็น false
+    // console.log(this.hhh);
+    // axios.post('/update-hhh', { hhh: true })
+    // .then(response => {
+    //   console.log(response.data);
+    // })
+    // .catch(error => {
+    //   console.log(error);
+    // });
+    //     }
+      },
       mounted(){
-
+        // console.log("เริ่มแรก",this.hhh);
       }
     };
     Vue.createApp(HOME).mount('#App-Home');

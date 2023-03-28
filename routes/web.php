@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeDataController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home.index');
+// Route::get('/', function () {
+//     return view('home.index');
+// });
+Route::controller(HomeDataController::class)->group(function() {
+    Route::get('/', 'index'); 
+    // Route::post('/update-hhh', 'UpdateValue');
 });

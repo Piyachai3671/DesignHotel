@@ -1,4 +1,4 @@
-<div class="" style="padding: 120px 0; background-color: #1b1b1b;">
+<div class="" style="padding: 120px; background-color: #1b1b1b;">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

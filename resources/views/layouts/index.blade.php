@@ -49,10 +49,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.37/vue.global.prod.min.js" integrity="sha512-8GokEWxcB/NrPU4O8BHTgd9dkLouAsvqCnk6BSa2CZw7QXh0QM8GHfS53xYW1QJJVyJWctlcdRQwu5UxeLVsNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.3/swiper-bundle.min.js" integrity="sha512-4MIWP9ui3MVR0iuCnJ9l6b9DWrCspboU0BbX5DNXoSJ4ZQXjrY7+sPJEehrR0rAx88jVUT9f9Hoa7fawwB3jHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     @yield('js')
 
     <script>
+$(document).ready(function() {
+  $('.carousel-control-next').click(function() {
+    $('h1').removeClass('animated fadeInUp').addClass('animated fadeInUp').one('animationend', function() {
+      $(this).removeClass('animated fadeInUp');
+    });
+    $('h4').removeClass('animated fadeInUp').addClass('animated fadeInUp').one('animationend', function() {
+      $(this).removeClass('animated fadeInUp');
+    });
+  });
 
+  $('#carouselExampleInterval').on('slid.bs.carousel', function () {
+    $('h1').removeClass('animated fadeInUp').addClass('animated fadeInUp').one('animationend', function() {
+      $(this).removeClass('animated fadeInUp');
+    });
+    $('h4').removeClass('animated fadeInUp').addClass('animated fadeInUp').one('animationend', function() {
+      $(this).removeClass('animated fadeInUp');
+    });
+  });
+});
+
+$('.carousel').carousel()
+// สร้างฟังก์ชันที่จะเรียกเมื่อมีการเลื่อนหน้าจอและเพิ่มอีเวนต์ 'scroll'
+window.addEventListener('scroll', fadeInUp);
 
 
 </script>
