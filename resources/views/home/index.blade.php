@@ -28,7 +28,13 @@
 
 .dropdown:hover .dropdown-content {display: block;} */
 
-
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gilda Display', serif;
+    font-weight: 400;
+    line-height: 1.25em;
+    margin: 0 0 20px 0;
+    color: #fff;
+}
 /* star - white  */
 .star {
   position: relative;
@@ -343,7 +349,7 @@
 
 /*Body1*/
 .section-subtitle {
-    font-size: 15px;
+  font-size: 15px;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
     color: #aa8453;
@@ -570,6 +576,14 @@ p {
 /*Rooms*/
 
 /*extraServices*/
+.bg-img-slider{
+
+  padding-top: 80px;  
+  background-image: url(img/slider2.jpg); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+}
 .detail{
 /* color: #fff;
 position: relative; 
@@ -718,6 +732,64 @@ video {
   max-height: 100%;
 }
 /*promotion*/
+
+/*Hotel Facilities*/
+ .single-facility  {
+    background: transparent;
+    padding: 30px 20px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+    line-height: 1;
+    border: 1px solid #2b2b2b;
+   
+    
+}
+.single-facility h5  {
+   font-size: 24px;
+    color: #fff;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.single-facility span  {
+  font-size: 50px; color:#aa8453; 
+}
+
+/*Hotel Facilities*/
+/*Review*/
+.desc-center2{
+ margin-left: 20%;
+}
+.line {
+    width: 60px;
+    border-top: 1px solid rgba(255,255,255,0.2) !important;
+    margin-bottom: 10px;
+}
+.quot {
+    position: absolute;
+    right: 20px;
+    top: 90px;
+    width: 70px;
+    margin: 0 auto 30px;
+    opacity: .1;
+}
+.info {
+    text-align: left;
+    margin: 30px 0 15px 0;
+}
+.author-img img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    float: left;
+    overflow: hidden;
+}
+.cont{
+  margin-left: 85px;
+}
+/*Review*/
 </style>
 
 @endsection
@@ -728,6 +800,8 @@ video {
   @include('home._Rooms')
   @include('home._extraServices')
   @include('home._promotional')
+  @include('home._hotelFacilities')
+  @include('home._review')
   <div class="modal fade" id="exampleModalPromotion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content " style="background-color: transparent;  display: flex;align-items: center;justify-content: center;">

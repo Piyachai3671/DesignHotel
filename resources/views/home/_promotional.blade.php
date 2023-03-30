@@ -1,4 +1,4 @@
-<div class="" style="margin-top: 100px; padding-top: 80px;  background-color: #1b1b1b; ">
+<div class="bg-img-slider" style="">
     <div class="container" style="z-index: 1; ">
         <div class="row">
             <div class="col-md-12">
@@ -7,7 +7,8 @@
                      <i class="star-rating" style="color: orange;"></i>
                      <i class="star-rating" style="color: orange;"></i>
                      <i class="star-rating" style="color: orange;"></i>
-                     <i class="star-rating" style="color: orange;"></i></span> 
+                     <i class="star-rating" style="color: orange;"></i>
+                    </span> 
                      
                      <h6 class="section-subtitle desc-center mb-4" style="color: #fff;">THE CAPPA LUXURY HOTEL</h6>
                      <h1 class="desc-center">Promotional Video</h1> 
