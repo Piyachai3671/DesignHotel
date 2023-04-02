@@ -1,36 +1,39 @@
-<div id="position  " class="container">
-    <section style="padding-top: 120px;">
-        <div class="" style="z-index: 1; background-color: #212529;">
-            <div class="row">
+<div class="" style="background-color: #242323; padding: 120px;">
+    <div class="container" style="z-index: 1; ">
+        <div class="row">
             <div class="col-md-6">
                 <div class="section-title animated fadeInUp">
                     <span><i class="star-rating" style="color: orange;"></i>
-                     <i class="star-rating" style="color: orange;"></i>
-                     <i class="star-rating" style="color: orange;"></i>
-                     <i class="star-rating" style="color: orange;"></i>
-                     <i class="star-rating" style="color: orange;"></i></span> 
-                     <div class="section-subtitle">THE CAPPA LUXURY HOTEL</div>
-                     <div class="section-title">Enjoy a Luxury</div>
-                     <div class="section-title">Experience</div>   
-                     <p>
-                        Welcome to the best five-star deluxe hotel in New York. Hotel elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat. Donec in quis the pellentesque velit. Donec id velit ac arcu posuere blane.
+                        <i class="star-rating" style="color: orange;"></i>
+                        <i class="star-rating" style="color: orange;"></i>
+                        <i class="star-rating" style="color: orange;"></i>
+                        <i class="star-rating" style="color: orange;"></i></span>
+                    <div class="section-subtitle">THE CAPPA LUXURY HOTEL</div>
+                    <div class="section-title">Enjoy a Luxury</div>
+                    <div class="section-title">Experience</div>
+                    <p>
+                        Welcome to the best five-star deluxe hotel in New York. Hotel elementum sesue the aucan
+                        vestibulum aliquam justo in sapien rutrum volutpat. Donec in quis the pellentesque velit. Donec
+                        id velit ac arcu posuere blane.
                     </p>
                     <p>
-                        Hotel ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine.
+                        Hotel ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius
+                        natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant
+                        morbine.
                     </p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="animated fadeInUp" style="margin-top: 90px; margin-bottom: 30px;">
                     <img style="width: 100%; height: auto;" src="img/body-1.jpg">
-                </div>   
+                </div>
             </div>
             <div class="col-md-3">
                 <div class="animated fadeInUp">
-                    <img style="width: 100%; height: auto;" src="img/body-1.2.jpg">  
+                    <img style="width: 100%; height: auto;" src="img/body-1.2.jpg">
                 </div>
-               
+
             </div>
         </div>
-    </section>
+    </div>
 </div>
