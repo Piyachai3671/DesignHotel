@@ -158,37 +158,37 @@
 
         /* FrireFox */
         /* @-moz-keyframes slideDown {
-                      0% {
-                        opacity: 0;
-                        transform: translateY(-60px);
-                      }
-                      100% {
-                        opacity: 1;
-                        transform: translateY(0);
-                      }
-                    } */
+                          0% {
+                            opacity: 0;
+                            transform: translateY(-60px);
+                          }
+                          100% {
+                            opacity: 1;
+                            transform: translateY(0);
+                          }
+                        } */
         /* GoogleChrome
-                    @-webkit-keyframes slideDown {
-                      0% {
-                        opacity: 0;
-                        transform: translateY(-60px);
-                      }
-                      100% {
-                        opacity: 1;
-                        transform: translateY(0);
-                      }
-                    } */
+                        @-webkit-keyframes slideDown {
+                          0% {
+                            opacity: 0;
+                            transform: translateY(-60px);
+                          }
+                          100% {
+                            opacity: 1;
+                            transform: translateY(0);
+                          }
+                        } */
         /* Opera
-                    @-o-keyframes slideDown {
-                      0% {
-                        opacity: 0;
-                        transform: translateY(-60px);
-                      }
-                      100% {
-                        opacity: 1;
-                        transform: translateY(0);
-                      }
-                    } */
+                        @-o-keyframes slideDown {
+                          0% {
+                            opacity: 0;
+                            transform: translateY(-60px);
+                          }
+                          100% {
+                            opacity: 1;
+                            transform: translateY(0);
+                          }
+                        } */
         @keyframes slideDown {
             0% {
                 opacity: 0;
@@ -233,9 +233,9 @@
         }
 
         /* .dropdown_item-1 :hover{
-                      transform-origin: top center;
-                      animation: slideLeft 300ms 60ms ease-in-out forwards;
-                    } */
+                          transform-origin: top center;
+                          animation: slideLeft 300ms 60ms ease-in-out forwards;
+                        } */
 
         /* ฺBODY  */
         @keyframes fadeInUp {
@@ -489,9 +489,9 @@
         }
 
         /* .con:: {
-                      animation: slide-down 1s ease-out forwards  ;
-                      
-                    } */
+                          animation: slide-down 1s ease-out forwards  ;
+                          
+                        } */
         .item .line {
             text-align: center;
             height: 1px;
@@ -617,9 +617,9 @@
 
         .detail {
             /* color: #fff;
-                    position: relative;
-                    bottom: 150px;
-                    overflow: hidden; */
+                        position: relative;
+                        bottom: 150px;
+                        overflow: hidden; */
 
             color: #fff;
             animation: slide-down 1s ease-out forwards;
@@ -693,9 +693,9 @@
         }
 
         /* .vid {
-                        position: relative;
-                        z-index: 8;
-                    } */
+                            position: relative;
+                            z-index: 8;
+                        } */
         .vid .vid-butn .icon {
             cursor: pointer;
             color: #aa8453;
@@ -712,36 +712,36 @@
         }
 
         /* .vid .vid-butn .icon:before {
-                        content: '';
-                        position: absolute;
-                        top: 5px;
-                        bottom: 5px;
-                        right: 5px;
-                        left: 5px;
-                        background: transparent;
-                        border-radius: 50%;
-                        z-index: -1;
-                        -webkit-transition: all 0.5s cubic-bezier(1, 0, 0, 1);
-                        -o-transition: all 0.5s cubic-bezier(1, 0, 0, 1);
-                        transition: all 0.5s cubic-bezier(1, 0, 0, 1);
-                    } */
+                            content: '';
+                            position: absolute;
+                            top: 5px;
+                            bottom: 5px;
+                            right: 5px;
+                            left: 5px;
+                            background: transparent;
+                            border-radius: 50%;
+                            z-index: -1;
+                            -webkit-transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+                            -o-transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+                            transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+                        } */
         /* [class^="ti-"], [class*=" ti-"] {
-                        font-family: 'themify';
-                        speak: none;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-variant: normal;
-                        text-transform: none;
-                        line-height: 1;
-                        -webkit-font-smoothing: antialiased;
-                        -moz-osx-font-smoothing: grayscale;
-                    } */
+                            font-family: 'themify';
+                            speak: none;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-variant: normal;
+                            text-transform: none;
+                            line-height: 1;
+                            -webkit-font-smoothing: antialiased;
+                            -moz-osx-font-smoothing: grayscale;
+                        } */
         /* *, ::after, ::before {
-                        box-sizing: border-box;
-                    } */
+                            box-sizing: border-box;
+                        } */
         /* .ti-control-play:before {
-                        content: "\e6ad";
-                    } */
+                            content: "\e6ad";
+                        } */
         .vid .vid-butn .icon:after {
             content: '';
             position: absolute;
@@ -984,6 +984,7 @@
 
             animation-delay: 0.60s;
         }
+
         .detail-fadeleft2 {
             opacity: 0;
             /* animation: fadeleft 300ms 60ms ease-in-out forwards; */
@@ -993,6 +994,7 @@
 
             animation-delay: 0.90s;
         }
+
         .detail-fadeleft3 {
             opacity: 0;
             /* animation: fadeleft 300ms 60ms ease-in-out forwards; */
@@ -1002,6 +1004,7 @@
 
             animation-delay: 1.10s;
         }
+
         .detail-fadeleft4 {
             opacity: 0;
             /* animation: fadeleft 300ms 60ms ease-in-out forwards; */
@@ -1012,7 +1015,37 @@
             animation-delay: 1.40s;
         }
 
+
         /*DetailHotal*/
+        /*Our News*/
+        .fadetextbox {
+            background-color: #aa8453;
+            height: 300px;
+            width: 90%;
+            position: relative;
+            top: -50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            
+            color: #fff;
+            animation: slide-down 1s ease-out forwards;
+            /* padding: 20px; */
+            
+           
+
+            z-index: 1;
+            height: auto;
+            background-color: #2b2b2b;
+
+
+        }
+
+        .fadetextbox:hover {
+            animation: slide-up 1s ease-out forwards;
+
+        }
+
+        /*Our News*/
     </style>
 @endsection
 @section('content')
