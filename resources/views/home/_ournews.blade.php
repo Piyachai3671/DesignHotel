@@ -33,6 +33,11 @@
                     <div class="carousel-item active img-hover-zoom">
                         <img style="width: 100%; height: 500px; object-fit: cover;" src="img/news1.jpg" class="d-block "
                             alt="...">
+                            <span class="category-book">
+                                <a href="#" style="">DEC</a>
+                                <br>
+                                <i>02</i>
+                            </span>
                         <div class="fadetextbox" style="">
                             <div class="row ">
                                 <div class="col mt-3" style="margin-left: 30px; text-align: center;">
@@ -49,6 +54,11 @@
                     <div class="carousel-item  img-hover-zoom">
                         <img style="width: 100%; height: 500px; object-fit: cover;" src="img/news2.jpg" class="d-block "
                             alt="...">
+                            <span class="category-book">
+                                <a href="#" style="">DEC</a>
+                                <br>
+                                <i>04</i>
+                            </span>
                         <div class="fadetextbox" style="">
                             <div class="row ">
                                 <div class="col mt-3" style="margin-left: 30px; text-align: center;">
@@ -65,6 +75,11 @@
                     <div class="carousel-item  img-hover-zoom">
                         <img style="width: 100%; height: 500px; object-fit: cover;" src="img/news3.jpg" class="d-block "
                             alt="...">
+                            <span class="category-book">
+                                <a href="#" style="">DEC</a>
+                                <br>
+                                <i>06</i>
+                            </span>
                         <div class="fadetextbox" style="">
                             <div class="row ">
                                 <div class="col mt-3" style="margin-left: 30px; text-align: center;">
@@ -81,6 +96,11 @@
                     <div class="carousel-item  img-hover-zoom">
                         <img style="width: 100%; height: 500px; object-fit: cover;" src="img/news4.jpg" class="d-block "
                             alt="...">
+                            <span class="category-book">
+                                <a href="#" style="">DEC</a>
+                                <br>
+                                <i>08</i>
+                            </span>
                         <div class="fadetextbox" style="">
                             <div class="row ">
                                 <div class="col mt-3" style="margin-left: 30px; text-align: center;">
@@ -97,6 +117,11 @@
                     <div class="carousel-item  img-hover-zoom">
                         <img style="width: 100%; height: 500px; object-fit: cover;" src="img/news5.jpg"
                             class="d-block " alt="...">
+                            <span class="category-book">
+                                <a href="#" style="">DEC</a>
+                                <br>
+                                <i>08</i>
+                            </span>
                         <div class="fadetextbox" style="">
                             <div class="row ">
                                 <div class="col mt-3" style="margin-left: 30px; text-align: center;">
@@ -114,6 +139,11 @@
                     <div class="carousel-item  img-hover-zoom">
                         <img style="width: 100%; height: 500px; object-fit: cover;" src="img/news6.jpg"
                             class="d-block " alt="...">
+                            <span class="category-book">
+                                <a href="#" style="">DEC</a>
+                                <br>
+                                <i>08</i>
+                            </span>
                         <div class="fadetextbox" style="">
                             <div class="row ">
                                 <div class="col mt-3" style="margin-left: 30px; text-align: center;">
