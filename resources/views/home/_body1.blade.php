@@ -1,4 +1,4 @@
-<div class="" style="background-color: #242323; padding: 120px;">
+<div class="padding-page" style="background-color: #242323; ">
     <div class="container" style="z-index: 1; ">
         <div class="row">
             <div class="col-md-6">

@@ -1,4 +1,4 @@
-<div class="bg-img-slider" style="">
+<div class="bg-img-slider " style="">
     <div class="container" style="z-index: 1; ">
         <div class="row">
             <div class="col-md-12">

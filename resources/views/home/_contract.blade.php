@@ -1,5 +1,5 @@
-<div class="bg-img-slider" style="height: 600px;">
-    <div class="container" style="z-index: ; ">
+<div class="bg-img-slider bg-img padding-page " style="">
+    <div class="container" style=" ">
         <div class="row">
             <div class="col-md-12">
                 <div class="testimonials">
@@ -18,8 +18,8 @@
                     </h5>
                     <div class="icon-tel ">
                         <i class="fa-solid fa-phone-volume"></i>
-                    </div> 
-                     <div class="tel" style="position: relative; top:-75px; left:60px;">
+                    </div>
+                    <div class="tel" style="position: relative; top:-75px; left:60px;">
                         <p class="">
                             Reservation
                         </p>
@@ -38,6 +38,7 @@
                 </div>
             </div>
         </div>
+
         <div class="booking head-box" style="">
             <div class="row ">
                 <div class="col">
@@ -93,14 +94,12 @@
                 <button class="btn-form1-submit mt-3">Check Avaliables</button>
             </div>
         </div>
-
-
     </div>
 </div>
-</div>
 
-<div class="footer-top" style="background-color: #222; display: flex; justify-content: center;  ">
-    <div class="row" style="padding: 120px;">
+
+<div class="footer-top padding-page" style="background-color: #222; display: flex; justify-content: center;  ">
+    <div class="row" style="">
         <div class="col-md-4 col-sm-12">
             <h3 class="footer-title">About Hotel</h3>
             <p>Welcome to the best five-star deluxe hotel in New York.
@@ -111,9 +110,9 @@
             </p>
         </div>
         <div class="col-md-4 col-sm-12">
-            <h3 class="footer-title" style="margin-left: 100px;">Explore</h3>
+            <h3 class="footer-title" style="">Explore</h3>
 
-            <div class="footer-explore-list" style="margin-top: 100px;">
+            <div class="footer-explore-list" style="">
                 <ul>
                     <li>
                         <a href="#">Home</a>

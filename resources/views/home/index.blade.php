@@ -1,6 +1,16 @@
 @extends('layouts.index')
 @section('css')
     <style>
+        .padding-page {
+            padding: 120px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .padding-page {
+                padding: 120px 20px;
+            }
+        }
+
         h1,
         h2,
         h3,
@@ -158,37 +168,37 @@
 
         /* FrireFox */
         /* @-moz-keyframes slideDown {
-                                                                  0% {
-                                                                    opacity: 0;
-                                                                    transform: translateY(-60px);
-                                                                  }
-                                                                  100% {
-                                                                    opacity: 1;
-                                                                    transform: translateY(0);
-                                                                  }
-                                                                } */
+                                                                          0% {
+                                                                            opacity: 0;
+                                                                            transform: translateY(-60px);
+                                                                          }
+                                                                          100% {
+                                                                            opacity: 1;
+                                                                            transform: translateY(0);
+                                                                          }
+                                                                        } */
         /* GoogleChrome
-                                                                @-webkit-keyframes slideDown {
-                                                                  0% {
-                                                                    opacity: 0;
-                                                                    transform: translateY(-60px);
-                                                                  }
-                                                                  100% {
-                                                                    opacity: 1;
-                                                                    transform: translateY(0);
-                                                                  }
-                                                                } */
+                                                                        @-webkit-keyframes slideDown {
+                                                                          0% {
+                                                                            opacity: 0;
+                                                                            transform: translateY(-60px);
+                                                                          }
+                                                                          100% {
+                                                                            opacity: 1;
+                                                                            transform: translateY(0);
+                                                                          }
+                                                                        } */
         /* Opera
-                                                                @-o-keyframes slideDown {
-                                                                  0% {
-                                                                    opacity: 0;
-                                                                    transform: translateY(-60px);
-                                                                  }
-                                                                  100% {
-                                                                    opacity: 1;
-                                                                    transform: translateY(0);
-                                                                  }
-                                                                } */
+                                                                        @-o-keyframes slideDown {
+                                                                          0% {
+                                                                            opacity: 0;
+                                                                            transform: translateY(-60px);
+                                                                          }
+                                                                          100% {
+                                                                            opacity: 1;
+                                                                            transform: translateY(0);
+                                                                          }
+                                                                        } */
         @keyframes slideDown {
             0% {
                 opacity: 0;
@@ -233,9 +243,9 @@
         }
 
         /* .dropdown_item-1 :hover{
-                                                                  transform-origin: top center;
-                                                                  animation: slideLeft 300ms 60ms ease-in-out forwards;
-                                                                } */
+                                                                          transform-origin: top center;
+                                                                          animation: slideLeft 300ms 60ms ease-in-out forwards;
+                                                                        } */
 
         /* ฺBODY  */
         @keyframes fadeInUp {
@@ -368,6 +378,14 @@
             margin-bottom: 5px;
         }
 
+        @media screen and (max-width: 768px) {
+            .section-subtitle {
+                font-size: 12px;
+                font-weight: 200;
+            }
+
+        }
+
         .section-title {
             font-size: 46px;
             font-family: 'Gilda Display', serif;
@@ -376,6 +394,14 @@
             position: relative;
             margin-bottom: 20px;
             line-height: 1.25em;
+        }
+
+        @media screen and (max-width: 768px) {
+            .section-title {
+                font-size: 18px;
+
+                font-weight: 200;
+            }
         }
 
         p {
@@ -488,9 +514,9 @@
         }
 
         /* .con:: {
-                                                                  animation: slide-down 1s ease-out forwards  ;
-                                                                  
-                                                                } */
+                                                                          animation: slide-down 1s ease-out forwards  ;
+                                                                          
+                                                                        } */
         .item .line {
             text-align: center;
             height: 1px;
@@ -616,9 +642,9 @@
 
         .detail {
             /* color: #fff;
-                                                                position: relative;
-                                                                bottom: 150px;
-                                                                overflow: hidden; */
+                                                                        position: relative;
+                                                                        bottom: 150px;
+                                                                        overflow: hidden; */
 
             color: #fff;
             animation: slide-down 1s ease-out forwards;
@@ -692,9 +718,9 @@
         }
 
         /* .vid {
-                                                                    position: relative;
-                                                                    z-index: 8;
-                                                                } */
+                                                                            position: relative;
+                                                                            z-index: 8;
+                                                                        } */
         .vid .vid-butn .icon {
             cursor: pointer;
             color: #aa8453;
@@ -711,36 +737,36 @@
         }
 
         /* .vid .vid-butn .icon:before {
-                                                                    content: '';
-                                                                    position: absolute;
-                                                                    top: 5px;
-                                                                    bottom: 5px;
-                                                                    right: 5px;
-                                                                    left: 5px;
-                                                                    background: transparent;
-                                                                    border-radius: 50%;
-                                                                    z-index: -1;
-                                                                    -webkit-transition: all 0.5s cubic-bezier(1, 0, 0, 1);
-                                                                    -o-transition: all 0.5s cubic-bezier(1, 0, 0, 1);
-                                                                    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
-                                                                } */
+                                                                            content: '';
+                                                                            position: absolute;
+                                                                            top: 5px;
+                                                                            bottom: 5px;
+                                                                            right: 5px;
+                                                                            left: 5px;
+                                                                            background: transparent;
+                                                                            border-radius: 50%;
+                                                                            z-index: -1;
+                                                                            -webkit-transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+                                                                            -o-transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+                                                                            transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+                                                                        } */
         /* [class^="ti-"], [class*=" ti-"] {
-                                                                    font-family: 'themify';
-                                                                    speak: none;
-                                                                    font-style: normal;
-                                                                    font-weight: normal;
-                                                                    font-variant: normal;
-                                                                    text-transform: none;
-                                                                    line-height: 1;
-                                                                    -webkit-font-smoothing: antialiased;
-                                                                    -moz-osx-font-smoothing: grayscale;
-                                                                } */
+                                                                            font-family: 'themify';
+                                                                            speak: none;
+                                                                            font-style: normal;
+                                                                            font-weight: normal;
+                                                                            font-variant: normal;
+                                                                            text-transform: none;
+                                                                            line-height: 1;
+                                                                            -webkit-font-smoothing: antialiased;
+                                                                            -moz-osx-font-smoothing: grayscale;
+                                                                        } */
         /* *, ::after, ::before {
-                                                                    box-sizing: border-box;
-                                                                } */
+                                                                            box-sizing: border-box;
+                                                                        } */
         /* .ti-control-play:before {
-                                                                    content: "\e6ad";
-                                                                } */
+                                                                            content: "\e6ad";
+                                                                        } */
         .vid .vid-butn .icon:after {
             content: '';
             position: absolute;
@@ -846,6 +872,25 @@
 
         .cont {
             margin-left: 85px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .mb-review {
+                padding-top: -250px;
+            }
+        }
+
+        .mb-review-guest {
+            font-size: 14px;
+            position: relative;
+            bottom: 40px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .mb-review-guest {
+                position: relative;
+            bottom: 20px;
+            }
         }
 
         /*Review*/
@@ -1017,26 +1062,42 @@
 
         /*DetailHotal*/
         /*Our News*/
+
+
         .fadetextbox {
             background-color: #aa8453;
             height: 300px;
             width: 90%;
             position: relative;
             top: -50px;
-            margin-left: 50px;
-            margin-right: 50px;
 
             color: #fff;
             animation: slide-down 1s ease-out forwards;
             /* padding: 20px; */
 
+            margin: 0px 50px;
 
 
             z-index: 1;
             height: auto;
             background-color: #2b2b2b;
+        }
 
+        @media screen and (max-width: 768px) {
+            .fadetextbox {
+                margin: 0px 20px;
+                background-color: #aa8453;
+                height: 300px;
+                width: 90%;
+                position: relative;
+                top: -50px;
+                color: #fff;
+                animation: slide-down 1s ease-out forwards;
 
+                z-index: 1;
+                height: auto;
+                background-color: #2b2b2b;
+            }
         }
 
         .fadetextbox:hover {
@@ -1051,10 +1112,10 @@
             z-index: 3;
             /* writing-mode: vertical-rl; */
             /* -ms-transform: rotate(180deg);
-                                                    -o-transform: rotate(180deg);
-                                                    -moz-transform: rotate(180deg);
-                                                    -webkit-transform: rotate(180deg);
-                                                    transform: rotate(180deg); */
+                                                            -o-transform: rotate(180deg);
+                                                            -moz-transform: rotate(180deg);
+                                                            -webkit-transform: rotate(180deg);
+                                                            transform: rotate(180deg); */
             text-orientation: mixed;
             text-transform: uppercase;
             color: #fff;
@@ -1100,17 +1161,19 @@
 
         }
 
-        .tel p,a {
+        .tel p,
+        a {
             font-family: 'Barlow', sans-serif;
             font-size: 15px;
             font-weight: 400;
             line-height: 1.75em;
             color: #fff;
             position: relative;
-            
+
         }
 
-        .tel p,a:hover {
+        .tel p,
+        a:hover {
             color: #fff;
 
         }
@@ -1119,12 +1182,41 @@
             text-decoration: none;
             font-size: 25px;
             /* position: relative;
-                                            top: -90px;
-                                            left: 70px; */
+                                                    top: -90px;
+                                                    left: 70px; */
+        }
+
+        /* ปรับขนาดภาพเมื่อหน้าจอขนาดเล็กกว่า 768px */
+
+
+        /* กำหนดขนาดภาพให้ตรงกับขนาดของหน้าจอ */
+        .img-news {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            padding: 0px 0px;
+
+        }
+
+        @media screen and (max-width:768px) {
+            .mb-ournews button {
+                margin: 50px;
+
+            }
+
         }
 
         /*Our News*/
         /*Contract*/
+        .bg-img{
+                height: auto;
+}
+        @media screen and (min-width:769px){
+            .bg-img{
+                height: 600px;
+}
+        }
+        
         .booking {
             background-color: #1b1b1b;
             width: 500px;
@@ -1132,6 +1224,17 @@
             left: 700px;
             bottom: 300px;
             padding: 50px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .booking {
+                background-color: #1b1b1b;
+                width: auto;
+                position: relative;
+                left: 0px;
+                bottom: 0px;
+                /* padding: 120px 0px; */
+            }
         }
 
         .head-box h6 {
@@ -1201,6 +1304,7 @@
             font-size: 24px;
             color: #fff;
             margin-bottom: 20px;
+            
         }
 
         /*Contractinfooter*/

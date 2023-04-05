@@ -1,4 +1,4 @@
-<div class="" style="padding: 120px; background-color: #242323; ">
+<div class="padding-page mt-detail" style=" background-color: #242323; ">
     <div class="container">
         <div class="row" style="">
             <div class="col-md-6  animated detail-fadeleft1" style="background-color: #1b1b1b;">

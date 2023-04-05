@@ -1,5 +1,5 @@
-<div class="bg-img-slider" style="height: 500px; ">
-    <div class="container" style="z-index: ; ">
+<div class="bg-img-slider mb-review" style="">
+    <div class="container" style="">
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title animated fadeInUp desc-center2">
@@ -44,7 +44,7 @@
                                         <i class="star-rating" style="color: orange;"></i>
                                     </span>
                                     <h6 style="letter-spacing: 4px;">EMILY BROWN</h6>
-                                    <span style="font-size: 14px; position: relative;bottom: 40px;">Guest review</span>
+                                    <span class="mb-review-guest" >Guest review</span>
                                 </div>
                             </div>
 
@@ -71,7 +71,7 @@
                                         <i class="star-rating" style="color: orange;"></i>
                                     </span>
                                     <h6 style="letter-spacing: 4px;">NOLAND WHITE</h6>
-                                    <span style="font-size: 14px; position: relative;bottom: 40px;">Guest review</span>
+                                    <span class="mb-review-guest" >Guest review</span>
                                 </div>
                             </div>
 
@@ -98,12 +98,12 @@
                                         <i class="star-rating" style="color: orange;"></i>
                                     </span>
                                     <h6 style="letter-spacing: 4px;">OLIVIA MARTIN</h6>
-                                    <span style="font-size: 14px; position: relative;bottom: 40px;">Guest review</span>
+                                    <span class="mb-review-guest" >Guest review</span>
                                 </div>
                             </div>
                             <div class="quot">
                                 <img style="height: 100px;" src="img/quot.png">
-                            </div> 
+                            </div>
 
 
                         </div>
@@ -125,4 +125,4 @@
         </div>
     </div>
 </div>
-</div>
+

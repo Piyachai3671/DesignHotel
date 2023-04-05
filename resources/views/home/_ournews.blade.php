@@ -1,4 +1,4 @@
-<div class="" style="padding: 120px; background-color: #1b1b1b;  ">
+<div class="padding-page" style=" background-color: #1b1b1b;  ">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -9,7 +9,7 @@
         </div>
         <div class="row">
             <div id="carouselNews" class="carousel slide " data-bs-ride="true">
-                <div class="carousel-indicators " style="position: absolute; bottom:-80px;">
+                <div class="carousel-indicators mb-ournews" style="position: absolute; bottom:-80px;">
                     <button type="button" data-bs-target="#carouselNews" data-bs-slide-to="0" class="active "
                         style=" background-color:#aa8453; border-radius: 50%; height: 12px; width:12px; "
                         aria-current="true" aria-label="Slide 1"></button>
@@ -30,8 +30,8 @@
                         aria-label="Slide 6"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active img-hover-zoom">
-                        <img style="width: 100%; height: 500px; object-fit: cover;" src="img/news1.jpg" class="d-block "
+                    <div class="carousel-item active img-hover-zoom ">
+                        <img style="width: 100%; height: 500px; object-fit: cover; " src="img/news1.jpg" class="d-block "
                             alt="...">
                             <span class="category-book">
                                 <a href="#" style="">DEC</a>
@@ -40,7 +40,7 @@
                             </span>
                         <div class="fadetextbox" style="">
                             <div class="row ">
-                                <div class="col mt-3" style="margin-left: 30px; text-align: center;">
+                                <div class="col mt-3" style="text-align: center;">
                                     <a href="#" style="text-decoration: none; color: #aa8453; "
                                         class="section-subtitle">Restaurant</a>
                                     <br>
