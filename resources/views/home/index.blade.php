@@ -1,6 +1,122 @@
 @extends('layouts.index')
 @section('css')
     <style>
+    /*navbar*/
+        /* nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        li {
+            margin-right: 20px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+
+        .line {
+            width: 30px;
+            height: 3px;
+            margin: 5px;
+            background-color: #fff;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1;
+            background-color: #333;
+        }
+
+
+
+        .dropdown-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .dropdown-menu li {
+            margin: 10px 0;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid #fff;
+        }
+
+        @media screen and (max-width: 768px) {
+            ul {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .hamburger.active .line:nth-child(2) {
+                display: none;
+            }
+
+            .hamburger.active .line:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            .hamburger.active .line:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            li {
+                margin: 10px 0;
+            }
+
+            a {
+                display: block;
+                padding: 10px;
+                border-bottom: 1px solid #fff;
+            }
+
+            .dropdown-menu {
+                display: block;
+            }
+        } */
+
+    /*navbar*/
+        /*body*/
+        @media screen and (max-width: 768px) {
+
+            .title-text div h1,
+            h4 {
+                font-size: 10px;
+                margin: -90px;
+            }
+        }
+
+        /*body*/
         .padding-page {
             padding: 120px;
         }
@@ -168,37 +284,37 @@
 
         /* FrireFox */
         /* @-moz-keyframes slideDown {
-                                                                          0% {
-                                                                            opacity: 0;
-                                                                            transform: translateY(-60px);
-                                                                          }
-                                                                          100% {
-                                                                            opacity: 1;
-                                                                            transform: translateY(0);
-                                                                          }
-                                                                        } */
+                                                                                                  0% {
+                                                                                                    opacity: 0;
+                                                                                                    transform: translateY(-60px);
+                                                                                                  }
+                                                                                                  100% {
+                                                                                                    opacity: 1;
+                                                                                                    transform: translateY(0);
+                                                                                                  }
+                                                                                                } */
         /* GoogleChrome
-                                                                        @-webkit-keyframes slideDown {
-                                                                          0% {
-                                                                            opacity: 0;
-                                                                            transform: translateY(-60px);
-                                                                          }
-                                                                          100% {
-                                                                            opacity: 1;
-                                                                            transform: translateY(0);
-                                                                          }
-                                                                        } */
+                                                                                                @-webkit-keyframes slideDown {
+                                                                                                  0% {
+                                                                                                    opacity: 0;
+                                                                                                    transform: translateY(-60px);
+                                                                                                  }
+                                                                                                  100% {
+                                                                                                    opacity: 1;
+                                                                                                    transform: translateY(0);
+                                                                                                  }
+                                                                                                } */
         /* Opera
-                                                                        @-o-keyframes slideDown {
-                                                                          0% {
-                                                                            opacity: 0;
-                                                                            transform: translateY(-60px);
-                                                                          }
-                                                                          100% {
-                                                                            opacity: 1;
-                                                                            transform: translateY(0);
-                                                                          }
-                                                                        } */
+                                                                                                @-o-keyframes slideDown {
+                                                                                                  0% {
+                                                                                                    opacity: 0;
+                                                                                                    transform: translateY(-60px);
+                                                                                                  }
+                                                                                                  100% {
+                                                                                                    opacity: 1;
+                                                                                                    transform: translateY(0);
+                                                                                                  }
+                                                                                                } */
         @keyframes slideDown {
             0% {
                 opacity: 0;
@@ -243,9 +359,9 @@
         }
 
         /* .dropdown_item-1 :hover{
-                                                                          transform-origin: top center;
-                                                                          animation: slideLeft 300ms 60ms ease-in-out forwards;
-                                                                        } */
+                                                                                                  transform-origin: top center;
+                                                                                                  animation: slideLeft 300ms 60ms ease-in-out forwards;
+                                                                                                } */
 
         /* ฺBODY  */
         @keyframes fadeInUp {
@@ -342,10 +458,11 @@
             font-weight: 400;
             font-family: 'Barlow Condensed', sans-serif;
             text-transform: uppercase;
-            padding: 12px 20px;
-            margin: 30px;
+            /* padding: 12px 20px; */
+            /* margin: 130px; */
             position: relative;
-            right: 22%;
+            top: 50px;
+            left: -90px;
             font-size: 15px;
             letter-spacing: 3px;
             border: 1px solid rgba(255, 255, 255, 0.5);
@@ -361,6 +478,16 @@
             border: 1px solid rgba(255, 255, 255, 0.5);
             background-position: -100% 0;
             color: #aa8453;
+        }
+
+        @media screen and (max-width: 1080px) {
+            .btnfade {
+                position: relative;
+            top: 250px;
+            left: -80px;
+                font-size: 1px;
+                
+            }
         }
 
         /*Hoverปุ่มBody*/
@@ -382,6 +509,7 @@
             .section-subtitle {
                 font-size: 12px;
                 font-weight: 200;
+                
             }
 
         }
@@ -394,6 +522,16 @@
             position: relative;
             margin-bottom: 20px;
             line-height: 1.25em;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .icon-star span i {
+                /* margin-bottom: -350px; */
+                position: relative;
+                bottom: 80px;
+                left: -30px;
+            }
         }
 
         @media screen and (max-width: 768px) {
@@ -514,9 +652,9 @@
         }
 
         /* .con:: {
-                                                                          animation: slide-down 1s ease-out forwards  ;
-                                                                          
-                                                                        } */
+                                                                                                  animation: slide-down 1s ease-out forwards  ;
+                                                                                                  
+                                                                                                } */
         .item .line {
             text-align: center;
             height: 1px;
@@ -642,9 +780,9 @@
 
         .detail {
             /* color: #fff;
-                                                                        position: relative;
-                                                                        bottom: 150px;
-                                                                        overflow: hidden; */
+                                                                                                position: relative;
+                                                                                                bottom: 150px;
+                                                                                                overflow: hidden; */
 
             color: #fff;
             animation: slide-down 1s ease-out forwards;
@@ -718,9 +856,9 @@
         }
 
         /* .vid {
-                                                                            position: relative;
-                                                                            z-index: 8;
-                                                                        } */
+                                                                                                    position: relative;
+                                                                                                    z-index: 8;
+                                                                                                } */
         .vid .vid-butn .icon {
             cursor: pointer;
             color: #aa8453;
@@ -737,36 +875,36 @@
         }
 
         /* .vid .vid-butn .icon:before {
-                                                                            content: '';
-                                                                            position: absolute;
-                                                                            top: 5px;
-                                                                            bottom: 5px;
-                                                                            right: 5px;
-                                                                            left: 5px;
-                                                                            background: transparent;
-                                                                            border-radius: 50%;
-                                                                            z-index: -1;
-                                                                            -webkit-transition: all 0.5s cubic-bezier(1, 0, 0, 1);
-                                                                            -o-transition: all 0.5s cubic-bezier(1, 0, 0, 1);
-                                                                            transition: all 0.5s cubic-bezier(1, 0, 0, 1);
-                                                                        } */
+                                                                                                    content: '';
+                                                                                                    position: absolute;
+                                                                                                    top: 5px;
+                                                                                                    bottom: 5px;
+                                                                                                    right: 5px;
+                                                                                                    left: 5px;
+                                                                                                    background: transparent;
+                                                                                                    border-radius: 50%;
+                                                                                                    z-index: -1;
+                                                                                                    -webkit-transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+                                                                                                    -o-transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+                                                                                                    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+                                                                                                } */
         /* [class^="ti-"], [class*=" ti-"] {
-                                                                            font-family: 'themify';
-                                                                            speak: none;
-                                                                            font-style: normal;
-                                                                            font-weight: normal;
-                                                                            font-variant: normal;
-                                                                            text-transform: none;
-                                                                            line-height: 1;
-                                                                            -webkit-font-smoothing: antialiased;
-                                                                            -moz-osx-font-smoothing: grayscale;
-                                                                        } */
+                                                                                                    font-family: 'themify';
+                                                                                                    speak: none;
+                                                                                                    font-style: normal;
+                                                                                                    font-weight: normal;
+                                                                                                    font-variant: normal;
+                                                                                                    text-transform: none;
+                                                                                                    line-height: 1;
+                                                                                                    -webkit-font-smoothing: antialiased;
+                                                                                                    -moz-osx-font-smoothing: grayscale;
+                                                                                                } */
         /* *, ::after, ::before {
-                                                                            box-sizing: border-box;
-                                                                        } */
+                                                                                                    box-sizing: border-box;
+                                                                                                } */
         /* .ti-control-play:before {
-                                                                            content: "\e6ad";
-                                                                        } */
+                                                                                                    content: "\e6ad";
+                                                                                                } */
         .vid .vid-butn .icon:after {
             content: '';
             position: absolute;
@@ -889,7 +1027,7 @@
         @media screen and (max-width: 768px) {
             .mb-review-guest {
                 position: relative;
-            bottom: 20px;
+                bottom: 20px;
             }
         }
 
@@ -1112,10 +1250,10 @@
             z-index: 3;
             /* writing-mode: vertical-rl; */
             /* -ms-transform: rotate(180deg);
-                                                            -o-transform: rotate(180deg);
-                                                            -moz-transform: rotate(180deg);
-                                                            -webkit-transform: rotate(180deg);
-                                                            transform: rotate(180deg); */
+                                                                                    -o-transform: rotate(180deg);
+                                                                                    -moz-transform: rotate(180deg);
+                                                                                    -webkit-transform: rotate(180deg);
+                                                                                    transform: rotate(180deg); */
             text-orientation: mixed;
             text-transform: uppercase;
             color: #fff;
@@ -1182,8 +1320,8 @@
             text-decoration: none;
             font-size: 25px;
             /* position: relative;
-                                                    top: -90px;
-                                                    left: 70px; */
+                                                                            top: -90px;
+                                                                            left: 70px; */
         }
 
         /* ปรับขนาดภาพเมื่อหน้าจอขนาดเล็กกว่า 768px */
@@ -1208,15 +1346,16 @@
 
         /*Our News*/
         /*Contract*/
-        .bg-img{
-                height: auto;
-}
-        @media screen and (min-width:769px){
-            .bg-img{
-                height: 600px;
-}
+        .bg-img {
+            height: auto;
         }
-        
+
+        @media screen and (min-width:769px) {
+            .bg-img {
+                height: 600px;
+            }
+        }
+
         .booking {
             background-color: #1b1b1b;
             width: 500px;
@@ -1304,7 +1443,7 @@
             font-size: 24px;
             color: #fff;
             margin-bottom: 20px;
-            
+            margin-left: 100px;
         }
 
         /*Contractinfooter*/
@@ -1320,18 +1459,25 @@
 
         .footer-explore-list li a {
             position: relative;
-            bottom: 80px;
+            left: 60px;
+           
             display: block;
             font-size: 15px;
             color: #adadad;
             -webkit-transition: all 500ms ease;
             transition: all 500ms ease;
             text-decoration: none;
-            animation: faderight-footer-revers 1s ease-out forwards;
-
-            margin: 10px 70px;
-
+            animation: faderight-footer-revers 1s ease-out forwards;  
         }
+       
+        @media screen and (max-width:768px){
+            .footer-explore-list li a {
+                position: relative;
+                
+            left: -30px;
+            }
+        }
+       
 
         @keyframes faderight-footer-revers {
 

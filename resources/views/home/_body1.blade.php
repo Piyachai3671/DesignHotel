@@ -1,8 +1,8 @@
 <div class="padding-page" style="background-color: #242323; ">
-    <div class="container" style="z-index: 1; ">
+    <div class="container" style="">
         <div class="row">
             <div class="col-md-6">
-                <div class="section-title animated fadeInUp">
+                <div class="section-title animated fadeInUp ">
                     <span><i class="star-rating" style="color: orange;"></i>
                         <i class="star-rating" style="color: orange;"></i>
                         <i class="star-rating" style="color: orange;"></i>

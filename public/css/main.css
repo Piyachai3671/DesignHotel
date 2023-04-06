@@ -1,3 +1,38 @@
+
+/* nav */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block; /* แสดงปุ่มเมนูเป็น block เมื่อขนาดหน้าจอเล็กกว่า 768px */
+  }
+  .navbar-nav {
+    display: none; /* ซ่อน Navbar เมื่อขนาดหน้าจอเล็กกว่า 768px */
+  }
+  .navbar-toggle:focus + .navbar-nav {
+    display: block; /* แสดง Navbar เมื่อปุ่มเมนูถูกคลิก */
+  }
+}
+@media (max-width: 768px) {
+  .navbar-nav {
+    position: absolute;
+    top: 50px; /* กำหนดตำแหน่ง Navbar ให้อยู่ด้านล่างของปุ่มเมนู */
+    left: 0;
+    width: 100%;
+    padding: 0;
+    background-color: #fff; /* กำหนดสีพื้นหลังของ Navbar */
+    z-index: 1;
+  }
+  .navbar-nav li {
+    display: block;
+    margin: 0;
+    border-bottom: 1px solid #ccc; /* กำหนดเส้นขอบระหว่างเมนู */
+  }
+  .navbar-nav a {
+    display: block;
+    padding: 10px 20px;
+    color: #333; /* กำหนดสีของข้อความเมนู */
+  }
+}
+/* nav */
 .background {
     /* position: fixed; */
     /* Preserve aspet ratio */

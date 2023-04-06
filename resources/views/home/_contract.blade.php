@@ -112,7 +112,7 @@
         <div class="col-md-4 col-sm-12">
             <h3 class="footer-title" style="">Explore</h3>
 
-            <div class="footer-explore-list" style="">
+            <div class="footer-explore-list" style="display:flex; flex-direction:column;">
                 <ul>
                     <li>
                         <a href="#">Home</a>

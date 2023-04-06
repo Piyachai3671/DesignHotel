@@ -77,6 +77,14 @@ $('.carousel').carousel()
 // สร้างฟังก์ชันที่จะเรียกเมื่อมีการเลื่อนหน้าจอและเพิ่มอีเวนต์ 'scroll'
 window.addEventListener('scroll', fadeInUp);
 
+const hamburger = document.querySelector(".hamburger");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  dropdownMenu.style.display = hamburger.classList.contains("active") ? "block" : "none";
+});
+
 
 </script>
 

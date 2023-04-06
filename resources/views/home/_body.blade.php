@@ -10,8 +10,8 @@
         <img src="img/cover-nologo-9.jpg" class=" imgcove" alt="...">
       </div>
     </div>
-    <span class="animated animatedFadeInUp fadeInUp" style="position: absolute; top:35%; left: 50%; z-index: 1; text-align: :center; justify-content: center; color:#fff;">
-      <div class="TextFadeInUP animated fadeInUp">
+    <span class="animated animatedFadeInUp fadeInUp title-text" style="position: absolute; top:35%; left: 50%; z-index: 1; text-align: :center; justify-content: center; color:#fff;">
+      <div class="TextFadeInUP animated fadeInUp icon-star">
        <span style=" position: relative; right: 10%;">
         <i class="star-rating" style="color: orange;"></i>
         <i class="star-rating" style="color: orange;"></i>
@@ -19,7 +19,7 @@
         <i class="star-rating" style="color: orange;"></i>
         <i class="star-rating" style="color: orange;"></i>
       </span> 
-        <h4>LUXURY HOTEL & BEST RESORT</h4>
+        <h4 class="">LUXURY HOTEL & BEST RESORT</h4>
         <h1>Enjoy A LUXURY</h1>
         <h1>EXPERIENCE</h1>   
         <button class="btn btnfade" style="">ROOMS & SUITES</button>
